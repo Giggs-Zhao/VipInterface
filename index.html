@@ -1,0 +1,172 @@
+<html>
+<head>
+  <SCRIPT LANGUAGE="JavaScript">
+        function onload(){
+//                var obj=document.getElementById('jk');
+        }
+        function fnChange(){
+        }
+        function onClear(){
+                document.getElementById("vipurl").value="";
+        }
+        function onPlay(){
+                var oJK = document.getElementById("jk");
+                var sJK=oJK.options[oJK.selectedIndex].value;
+                var sVipUrl = document.getElementById("vipurl").value;
+                var oWin = document.getElementById("play");
+                if (sVipUrl.length>0){
+                        oWin.src=sJK + sVipUrl;
+                }
+        }
+//        function iFrameHeight() { 
+//                var ifm = document.getElementById("play"); 
+//                var subWeb = document.frames ? document.frames["play"].document : ifm.contentDocument;
+//                ifm.height = subWeb.body.scrollHeight;
+//                ifm.width = subWeb.body.scrollWidth;
+//        }
+  </SCRIPT>
+  <title>    免费VIP播放器网页版    </title>
+</head>
+<body onload="onload()" bgcolor=#000000>
+<table  width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+        <td height="9">
+                <form method="post" action="">
+                <select name="jk" id="jk" size=1 onchange="fnChange()">
+                        <option value="http://api.nobij.top/jx/?url=" selected>接口1</option>
+
+                     <option value="http://jx.aeidu.cn/index.php?url=" selected>接口2</option>
+
+                     <option value="http://api.bbbbbb.me/jx/?url=">
+                        解析线路一
+                    </option>
+                
+                    <option value="https://z1.m1907.cn/?jx=">
+                        解析线路二
+                    </option>
+                
+                    <option value="https://www.h8jx.com/jiexi.php?url=">
+                        接口:H8
+                    </option>
+                
+                    <option value="https://yi29f.cn/vip.php?url=">
+                        接口:千叶
+                    </option>
+                
+                    <option value="https://jx.fo97.cn/?url=">
+                        接口:星空
+                    </option>
+                
+                    <option value="https://api.927jx.com/vip/?url=">
+                        接口:927
+                    </option>
+                
+                    <option value="https://jx.000180.top/jx/?url=">
+                        接口:180
+                    </option>
+                
+                    <option value="https://cn.bjbanshan.cn/jx.php?url=">
+                        接口:517
+                    </option>
+                
+                    <option value="https://api.8bjx.cn/?url=">
+                        接口:8B
+                    </option>
+                
+                    <option value="https://vip.mpos.ren/v/?url=">
+                        接口:人人
+                    </option>
+                
+                    <option value="https://jx.1ff1.cn/?url=">
+                        接口:爸比云
+                    </option>
+                
+                    <option value="https://jx.wslmf.com/?url=">
+                        接口:流氓凡
+                    </option>
+                
+                    <option value="https://jiexi.071811.cc/jx.php?url=">
+                        接口:石云
+                    </option>
+                
+                    <option value="https://jx.wslmf.com/?url=">
+                        接口:凡凡
+                    </option>
+                
+                    <option value="https://www.nxflv.com/?url=">
+                        接口:诺讯
+                    </option>
+                
+                    <option value="https://api.lhh.la/vip/?url=">
+                        接口:豪华啦
+                    </option>
+                
+                    <option value="https://jiexi.380k.com/?url=">
+                        接口:黑云
+                    </option>
+                
+                    <option value="https://py.ha12.xyz/sos/index.php?url=">
+                        接口:ha12
+                    </option>
+                
+                    <option value="https://jx.mw0.cc/?url=">
+                        接口:凉城
+                    </option>
+                
+                    <option value="https://yi29f.cn/vip.php?url=">
+                        接口:千叶
+                    </option>
+                
+                    <option value="https://jx.ejiafarm.com/dy.php?url=">
+                        接口:穷二代
+                    </option>
+                
+                    <option value="http://jiexi.yiqizouba.top/?url=">
+                        接口:一起走吧
+                    </option>
+                
+                    <option value="https://www.1717yun.com/jx/ty.php?url=">
+                        接口:接口:17云
+                    </option>
+                
+                    <option value="https://beaacc.com/api.php?url=">
+                        接口:瀚晶
+                    </option>
+                
+                    <option value="https://jx.52damu.com/dmjx/jiexi.php?url=">
+                        接口:大幕
+                    </option>
+                
+                    <option value="https://jx.jiexis.com/?url=">
+                        接口:解析S
+                    </option>
+                
+                    <option value="https://jqaaa.com/jx.php?url=">
+                        接口:金桥
+                    </option>
+                
+                    <option value="https://jx.598110.com/index.php?url=">
+                        接口:通用
+                    </option>
+                
+                    <option value="https://jx.ivito.cn/?url=">
+                        接口:维多
+                    </option>
+                
+                    <option value="https://jx.du2.cc/?url=">
+                        接口:二度
+                    </option>
+
+                </select>
+                <input type="text" name="vipurl" id="vipurl" size=88 value="">
+                <input type="button" value="播放" onclick="onPlay()">
+                <input type="button" value="清除" onclick="onClear()">
+         </form>
+        </td>
+</tr>
+<tr>
+        <td><iframe src="" name="play" id="play" width="100%" align="center" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></td>
+</tr>
+</table>
+</body>
+</html>
